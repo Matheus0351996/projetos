@@ -1,11 +1,11 @@
-export const goToPokemonList = (history) =>{
-    history.push("/")
+export const goToPokemonList = (navigate) =>{
+    navigate("/")
 }
 
-export const goToPokemonDetail = (history, name) =>{
-    history.push(`/pokemon/${name}`)
+export const goToPokemonDetail = (navigate, name) =>{
+    navigate(`/pokemon/${name}`)
 }
 
-export const goToPokedex = (history) =>{
-    history.push("/")
+export const goToPokedex = (navigate) =>{
+    navigate("/")
 }

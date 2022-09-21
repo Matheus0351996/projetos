@@ -21,7 +21,10 @@ useEffect (() => {
         .then((response) => {
             newList.push(response.data)
             if (newList.length === 20) {
-                setPokemons(newList)
+                const orderedList = newList.sort((a,b) => {
+                    return a.id - b.id
+                })
+                setPokemons(orderedList)
             }
     })
         .catch((error) => console.log(error.message))
