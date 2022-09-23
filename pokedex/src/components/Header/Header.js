@@ -8,7 +8,7 @@ const Header = ({ leftButtonFunction, title, showRightButton }) => {
 
   const leftButtonTitle = () => {
     switch (title) {
-      case "Lista de Pokémons":
+      case "Lista de Pokemons":
         return "Ir para Pokedex";
       case "Pokédex":
         return "Voltar para lista de pokemons";
@@ -25,7 +25,7 @@ const Header = ({ leftButtonFunction, title, showRightButton }) => {
       <h1>{title}</h1>
       {showRightButton && (
         <RightHeaderButton onClick={() => goToPokedex(navigate)}>
-          Ir para pokedex
+          Ir para Pokedex
         </RightHeaderButton>
       )}
     </HeaderContainer>
