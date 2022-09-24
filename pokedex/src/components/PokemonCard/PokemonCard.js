@@ -20,7 +20,7 @@ const PokemonCard = ({pokemon}) => {
             />
             </ImgContainer>
             <ButtonsContainer>
-                <button>
+                <button >
                     Adicionar a Pokedex
                 </button>
                 <button onClick={()=>goToPokemonDetail(navigate, pokemon.name)}>
