@@ -46,7 +46,7 @@ const PokemonDetailScreen = () => {
 
   return (
     <div>
-      <Header leftButtonFunction={() => navigate.goBack()} showRightButton />
+      <Header leftButtonFunction={() => navigate(-1)} showRightButton />
       {selectedPokemon && selectedPokemon.sprites && (
         <PokeInfosContainer>
           <ImagesContainer>
