@@ -46,7 +46,11 @@ const PokemonDetailScreen = () => {
 
   return (
     <div>
-      <Header leftButtonFunction={() => navigate(-1)} showRightButton />
+      <Header 
+      title={"Detalhes do Pokemon"}
+      leftButtonFunction={() => navigate(-1)} 
+      showRightButton 
+      />
       {selectedPokemon && selectedPokemon.sprites && (
         <PokeInfosContainer>
           <ImagesContainer>
