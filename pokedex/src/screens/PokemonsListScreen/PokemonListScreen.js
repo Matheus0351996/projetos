@@ -8,11 +8,12 @@ import { useNavigate } from "react-router-dom";
 
 const PokemonListScreen = () => {
     const {pokemons} = useContext(GlobalStateContext)
-    const navigate = useNavigate
+    const navigate = useNavigate()
     return (
     <>
-        <Header title = {"Lista de Pokemons"}
-        leftButtonFunction = {()=>goToPokedex(navigate)}
+        <Header 
+        title = {"Lista de Pokemons"} 
+        leftButtonFunction = {() =>goToPokedex(navigate)}
         />
         <PokeListContainer>
             {
