@@ -1,6 +1,13 @@
+import { type } from "os";
 import styled from "styled-components";
 
-export const Container = styled.div`
+type ContainerProps = {
+    done:boolean;
+}
+
+export const Container = styled.div(({done} : ContainerProps)=>(
+
+    `
 display: flex;
 background-color: #20212C;
 padding: 10px;
@@ -15,7 +22,10 @@ align-items: center;
     }
 
     label{
-        color: #CCC
+        color: #CCC;
+        text-decoration: ${done ? 'line-through' : 'initial'};
+        
     }
 
 `
+))

@@ -12,8 +12,12 @@ export const ListItem = ({ item } : Props) => {
 
 
     return(
-        <C.Container>
-            <input type="checkbox" />
+        <C.Container done={isChecked}>
+            <input 
+            type="checkbox" 
+            checked={isChecked} 
+            onChange={e =>setIsChecked(e.target.checked) }
+            />
             <label>{item.name}</label>
         </C.Container>
         )
